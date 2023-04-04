@@ -11,7 +11,6 @@ const listenForm = throttle(
   event => {
     const { email, message } = event.currentTarget.elements;
     const feedback = { email: email.value, message: message.value };
-    console.log(feedback);
     localStorage.setItem('feedback-form-state', JSON.stringify(feedback));
   },
   500,
@@ -21,7 +20,6 @@ const listenForm = throttle(
 form.addEventListener('input', listenForm);
 form.addEventListener('submit', event => {
   event.preventDefault();
-  console.log({ email: form[0].value, message: form[1].value });
   form.reset();
   localStorage.clear();
 });
