@@ -18,7 +18,9 @@
     "url": "https://github.com/kamiltrzmiel/goit-js-hw-08/issues"
   },
   "devDependencies": {
-    "parcel": "^2.8.3"
+    "parcel": "^2.8.3",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml-include": "^1.7.4"
   },
   "dependencies": {
     "@vimeo/player": "^2.18.0",
